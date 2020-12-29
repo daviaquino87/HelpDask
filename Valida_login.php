@@ -26,6 +26,8 @@ foreach($usuarios_sistema as $user){
 if($usuario_autenticado) {
     echo 'Usuario autenticado';
     $_SESSION['autenticado'] = "SIM";
+    header('location: home.php');
+
 //o else aqui serve para caso a condição não seja atendida , volte para page index com um erro no URL;
 }else{
     $_SESSION['autenticado'] = "NAO";
