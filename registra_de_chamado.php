@@ -21,6 +21,6 @@
 //fclose(); serve para fechar o arquivo que foi criado e aguarda como parametro
 //o nome do aquivo;
     fclose($arquivo);
-
+    
     header('location:abrir_chamado.php');
 ?>
