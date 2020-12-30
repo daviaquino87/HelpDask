@@ -26,6 +26,8 @@ foreach($usuarios_sistema as $user){
 if($usuario_autenticado) {
     echo 'Usuario autenticado';
     $_SESSION['autenticado'] = "SIM";
+    $_SESSION['x'] = "valor unsetd";
+    $_SESSION['y'] = "valor unsetd";
     header('location: home.php');
 
 //o else aqui serve para caso a condição não seja atendida , volte para page index com um erro no URL;
